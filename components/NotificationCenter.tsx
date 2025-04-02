@@ -1,16 +1,18 @@
+"use client";
+
+
+
 import { useState } from "react"
 import { Bell } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Badge } from "@/components/ui/badge"
-
 interface Notification {
   id: string
   title: string
   message: string
   read: boolean
 }
-
 export function NotificationCenter() {
   const [notifications, setNotifications] = useState<Notification[]>([
     { id: "1", title: "Account Update", message: "Your account balance has been updated.", read: false },

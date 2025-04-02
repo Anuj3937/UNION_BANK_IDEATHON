@@ -1,3 +1,6 @@
+
+
+
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -6,6 +9,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { NotificationCenter } from "@/components/NotificationCenter"
 import type React from "react"
+import { useState } from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
